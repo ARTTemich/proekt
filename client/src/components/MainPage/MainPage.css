@@ -1,0 +1,366 @@
+.bg-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: max-content;
+    background: linear-gradient(#9E77ED, #243b55);
+}
+
+/* .app-container {
+    position: relative;
+    width: 100%;
+    height: max-content;
+} */
+.main-container {
+    position: relative;
+    display: flex;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: max-content;
+    min-height: 100vh;
+    transform: translate(-50%);
+}
+
+.main-information {
+    display: flex;
+    flex-direction: column;
+    margin: 65px auto 0;
+    width: 100%;
+
+}
+
+.main-article:first-child {
+    padding-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.main-article {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*overflow: hidden;*/
+    height: max-content;
+}
+.main-article img {
+    height: 80px;
+}
+.main-article-text {
+    font-weight: 800;
+    color: #fff;
+}
+
+
+
+.main-repo {
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #D0D5DD;
+    margin-top: 10px;
+    border-radius: 12px;
+    padding: 5px 10px 15px;
+}
+.main-repo:hover {
+    box-shadow: 0 0 15px rgba(0,0,0, 0.2);
+}
+
+.main-repo p {
+    margin: 0;
+
+}
+
+.main-repo span {
+    color: #243b55;
+    font-size: 1rem;
+}
+
+.main-repo:hover p {
+    color: #101828;
+}
+
+.repo-container {
+    width: 100%;
+    min-height: max-content;
+    
+    margin: 25% auto 0;
+}
+
+.repo-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+.repo-name {
+    font-size: 2rem;
+    font-weight: 800;
+}
+.repo-author {
+    font-size: 0.9rem;
+}
+.repo-description {
+    font-style: italic;
+}
+.repo-extra {
+    padding: 0 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.repo-extra a {
+    text-decoration: none;
+    color:#101828;
+
+}
+
+.repo-extra a:hover {
+    color:#9E77ED;
+}
+
+.repo-extra-rating {
+    display: flex;
+    font-weight: 800;
+}
+
+.repo-extra-rating img {
+    margin-left: 5px;
+    scale: 0.7;
+}
+
+.repo-extra-rating ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+
+}
+.repo-extra-rating ul img {
+    margin-right: 5px;
+    cursor: pointer;
+}
+.repo-extra-rating ul img:last-child {
+    margin-right: 10px;
+}
+/* 
+.repo-extra-rating ul img:hover .svgObject-star {
+    fill: black;
+} */
+
+.starObject {
+    /* padding: 10px; */
+    scale: 1.5;
+    
+}
+
+.repo-extra-rating ul button:hover {
+    scale: 1.1;
+}
+
+.repo-comment {
+    margin-top: 15px;
+    padding: 20px;
+    height: 500px;
+    max-height: 500px;
+    border-radius: 12px;
+    overflow-y: scroll;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+    /* position: relative; */
+}
+.repo-comment::-webkit-scrollbar {
+    width: 0;
+  }
+
+.repo-item {
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+    margin-top: 10px;
+    border-radius: 12px;
+    padding: 5px 10px;
+    color: white;   
+    width: 50%;
+}
+
+.repo-answer-item {
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+    margin-top: 10px;
+    margin-left: 45px;
+    border-radius: 12px;
+    padding: 5px 10px;
+    color: white;   
+    width: 45%;
+}
+
+.repo-item__name {
+    font-weight: 800;
+}
+.repo-item__text {
+    font-style: italic;
+}
+
+.repo-item__buttons {
+    margin-top: 2px;
+    border: 1px solid white;
+    border-width: 1px 0 0 0;
+}
+
+.repo-item__create {
+    background: none;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+.repo-item__create:hover {
+    box-shadow: 0 2px 15px rgba(0,0,0,0.5);
+}
+
+.repo-item__buttons button {
+    background: none;
+    border: none;
+    padding: 2px;
+    margin-right: 15px;
+    border-radius: 8px;
+    color: white;
+}
+
+.repo-item__buttons button:hover {
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+}
+.repo-item__buttons button:active {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+}
+
+
+.repo-create-comment {
+
+    position: absolute;
+    background: lightgrey;
+    text-align: center;
+    border-radius: 12px;
+    top: 45%;
+    left: 0;
+    /* border: 1px solid black; */
+    height: 150px;
+    width: 100%;
+}
+
+.repo-create-comment {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    min-width: 280px;
+    max-width: 500px;
+    height: auto;
+    background: #E2E2E2;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid white;
+    animation: fade 1s ease 1 forwards;
+  }
+  .repo-create-comment-h1 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 1.5rem 1rem 0.5rem;
+  }
+
+  .repo-create-comment-div {
+    position: relative;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto 15px;
+  }
+
+  .repo-create-comment-div label {
+    text-align: left;
+    margin-left: 5px;
+  }
+  .repo-create-comment input {
+    border-radius: 12px;
+    border: none;
+    margin-bottom: 10px;
+    padding: 0 10px;
+  }
+
+  .repo-create-comment-button {
+    margin: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    background: transparent;
+    border: none;
+    color: #1678E5;
+    height: 3rem;
+    font-size: 1rem;
+    width: 50%;
+    bottom: 0;
+    cursor: pointer;
+  }
+
+
+  .repo-create-comment-button:nth-of-type(1) {
+    border-top: 1px solid #B4B4B4;
+    border-right: 1px solid #B4B4B4;
+    left: 0;
+    border-radius: 0 0 0 10px;
+  }
+  .repo-create-comment-button:nth-of-type(2) {
+    border-top: 1px solid #B4B4B4;
+    right: 0;
+    border-radius: 0 0 10px 0;
+  }
+  .repo-create-comment-button:focus,
+  .repo-create-comment-button:hover {
+    font-weight: bold;
+    background: #EFEFEF;
+  }
+  .repo-create-comment-button:active {
+    background: #D6D6D6;
+  }
+
+
+  
+@media (max-width: 1400px) {
+    .main-container {
+        /* background: #000; */
+        width: 100%;
+    }
+}
+
+@media (max-width: 720px) {
+    .repo-information {
+        box-shadow: none;
+    }
+    .repo-comment {
+        border: none;
+    }
+    .repo-item__create {
+        box-shadow: 0 5px 15px rgba(0,0,0, 0.2);
+    }
+    .repo-extra {
+        padding: 0;
+    }
+    .repo-item {
+        width: 100%;
+    }
+    .repo-answer-item {
+        width: auto;
+    }
+}

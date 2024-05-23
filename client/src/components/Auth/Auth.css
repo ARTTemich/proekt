@@ -1,0 +1,124 @@
+.auth-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+
+    background: linear-gradient(#9E77ED, #243b55);
+
+}
+
+.auth-method {
+
+
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choose-method {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.choose-method a {
+    /* text-decoration: none; */
+    margin-left: 5px;
+    color: #fff;
+}
+.choose-method a:hover {
+    color: #9E77ED;
+}
+.choose-method h3 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.auth-input-container {
+    width: 80%;
+}
+
+.auth-input-container h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.auth-input-container form {
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-input-container .user-box {
+    position: relative;
+}
+
+.auth-input-container .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.auth-input-container .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+    
+}
+
+
+.auth-input-container .user-box input:focus + label,
+.auth-input-container .user-box input:valid + label {
+    top: -20px;
+    left: 0;
+    font-size: 12px;
+}
+
+.auth-input-container form .auth-confirm {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-weight: 800;
+    position: relative;
+    display: flex;
+    width: max-content;
+    margin: 0 auto;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .25s;
+    letter-spacing: 4px;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+.auth-input-container form .auth-confirm:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+.auth-input-container form .auth-confirm:active {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
